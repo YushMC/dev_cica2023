@@ -1,0 +1,85 @@
+.cards__horizontal{
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 1% auto ;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 2%;
+    gap:3%;
+    border-radius: 20px;
+    user-select: none;
+}
+
+.cards__horizontal .images{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.cards__horizontal .images img{
+    width: 100%;
+    border-radius: 10px;
+    transition: all linear 0.5s;
+}
+.cards__horizontal .images img:hover{
+    transform: scale(1.1)!important;
+    box-shadow: 0px 0px 10px 10px rgba(19, 19, 19, 0.5);
+}
+.cards__horizontal .description{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.cards__horizontal .data{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:2%;
+    user-select: text;
+}
+.cards__horizontal .card{
+    width: 100%;
+    height: auto;
+}
+.cards__horizontal  .description .name h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+.data .card .descripcion p{
+    padding-top: 15px;
+}
+
+.rates .card .descripcion table{
+    padding-top: 15px;
+    width: 100%;
+}
+
+.rates .card .descripcion .content_botones{
+    width: 100%;
+}
+.rates .card .descripcion .content_botones a{
+    background:none;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #36b0c5;
+    color: black;
+}
+.rates .card .descripcion .content_botones a:nth-child(2){
+    margin-top: 10px;
+}
+
+@media screen and (max-width:700px) {
+    .cards__horizontal{
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+    }
+    
+    .rates .card .descripcion table td{
+        font-size: 12px;
+    }
+    .description .name h3{
+        padding-top: 10px;
+    }
+}
+
