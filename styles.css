@@ -74,9 +74,9 @@ header{
 }
 
 .body_content{
-    width: 100%;
     position: relative;
     margin-top:20% ;
+    overflow: hidden;
 }
 .collage{
     display: flex;
@@ -236,10 +236,12 @@ footer{
 }
 
 @media (max-width: 600px){
-   header{
-    width: 100%;
-   }
-    
+    header{
+        overflow: hidden;
+    }
+    .banner{
+        max-width: 300px;
+    }
     .content_header .titulo{
         font-size: 7px;
     }
@@ -280,8 +282,9 @@ footer{
         margin-bottom: 100px;
     }
     .collage{
-        margin: 5% 5%;
+        display: none;
     }
+    
 }
 @media (min-width: 1200px){
     .body_content{
