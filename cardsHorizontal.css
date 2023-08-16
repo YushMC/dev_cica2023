@@ -102,7 +102,7 @@ tbody tr:nth-child(even){
     .description .name h3{
         padding-top: 10px;
     }
-    .data{
+    .cards__horizontal .data{
         display: flex;
         flex-direction: column;
     }
